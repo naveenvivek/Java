@@ -1,0 +1,49 @@
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.054.001.08">
+    <BkToCstmrDbtCdtNtfctn>
+        <GrpHdr>
+            <MsgId>ABC12345</MsgId>
+            <CreDtTm>2024-01-25T08:30:47</CreDtTm>
+            <AddtlInf>Additional Information</AddtlInf>
+        </GrpHdr>
+        <Ntfctn>
+            <Id>Notification1</Id>
+            <CreDtTm>2024-01-25T08:30:47</CreDtTm>
+            <Acct>
+                <Id>
+                    <IBAN>GB33BUKB20201555555555</IBAN>
+                </Id>
+                <Ccy>EUR</Ccy>
+                <Tp>
+                    <CdOrPrtry>
+                        <Cd>CASH</Cd>
+                    </CdOrPrtry>
+                </Tp>
+            </Acct>
+            <Ntry>
+                <Amt Ccy="EUR">1000.00</Amt>
+                <CdtDbtInd>CRDT</CdtDbtInd>
+                <Sts>BOOK</Sts>
+                <BookgDt>
+                    <Dt>2024-01-25</Dt>
+                </BookgDt>
+                <ValDt>
+                    <Dt>2024-01-25</Dt>
+                </ValDt>
+                <AcctSvcrRef>123456789</AcctSvcrRef>
+                <BkTxCd>
+                    <Prtry>
+                        <Cd>PMNT</Cd>
+                        <Issr>ABC Bank</Issr>
+                    </Prtry>
+                </BkTxCd>
+                <NtryDtls>
+                    <Btch>
+                        <PmtInfId>Payment1</PmtInfId>
+                        <NbOfTxs>1</NbOfTxs>
+                        <TtlAmt Ccy="EUR">1000.00</TtlAmt>
+                    </Btch>
+                </NtryDtls>
+            </Ntry>
+        </Ntfctn>
+    </BkToCstmrDbtCdtNtfctn>
+</Document>
