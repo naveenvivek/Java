@@ -1,0 +1,34 @@
+The camt.054 message, as part of the ISO 20022 standard, has a comprehensive structure designed to carry detailed information about bank-to-customer debit and credit notifications. The essential parts of a camt.054 message typically include:
+
+Group Header (GrpHdr): Contains general information about the message, such as message ID and creation date/time.
+
+Notification (Ntfctn): The main body of the message, which includes:
+
+Identification (Id): Unique identifier for the notification.
+Creation DateTime (CreDtTm): Timestamp of the notification creation.
+Account (Acct): Details of the account for which the notification is sent, including the account identification (e.g., IBAN) and currency.
+Entry (Ntry): Details of each entry in the notification, including:
+
+Amount (Amt): The amount of the transaction.
+Credit/Debit Indicator (CdtDbtInd): Indicates whether the transaction is a credit or debit.
+Status (Sts): Status of the entry, such as booked or pending.
+Booking and Value Dates (BookgDt, ValDt): Dates relevant to the transaction.
+Account Servicer Reference (AcctSvcrRef): A reference assigned by the account servicer.
+Bank Transaction Code (BkTxCd): Code provided by the bank describing the nature of the transaction.
+Entry Details (NtryDtls): Provides further details on individual transactions, which might include:
+
+Transaction Details (TxDtls): Specifics of each transaction, including references, amount details, related parties, and remittance information.
+Additional Transaction Information: This can include:
+
+References (Refs): End-to-End ID, Transaction ID, etc.
+Amount Details (AmtDtls): Breakdown of the transaction amount.
+Related Parties (RltdPties): Information about the debtor and creditor, such as names and addresses.
+Remittance Information (RmtInf): Unstructured or structured information related to the purpose of the transaction.
+Supplementary Data: Some camt.054 messages might include additional data that does not fit into the standard structure.
+
+Each of these sections is crucial for conveying the complete information required for debit and credit notifications in the banking context. The absence of any of these parts (particularly the core elements like Notification, Entry, and Entry Details) could result in an incomplete or non-compliant message. However, it's important to note that the specific requirements can vary between different banks and financial institutions, and not all fields are mandatory in every context. The provided XML example in the previous messages covers the key components typically found in a camt.054 message.
+
+
+
+
+
