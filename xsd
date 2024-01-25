@@ -1,16 +1,16 @@
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.054.001.08">
     <BkToCstmrDbtCdtNtfctn>
         <GrpHdr>
-            <MsgId>ABC12345</MsgId>
-            <CreDtTm>2024-01-25T08:30:47</CreDtTm>
+            <MsgId>MSG83502</MsgId>
+            <CreDtTm>2024-01-25T06:01:04</CreDtTm>
             <AddtlInf>Additional Information</AddtlInf>
         </GrpHdr>
         <Ntfctn>
             <Id>Notification1</Id>
-            <CreDtTm>2024-01-25T08:30:47</CreDtTm>
+            <CreDtTm>2024-01-25T06:01:04</CreDtTm>
             <Acct>
                 <Id>
-                    <IBAN>GB33BUKB20201555555555</IBAN>
+                    <IBAN>GB33BUKB20201514789390</IBAN>
                 </Id>
                 <Ccy>EUR</Ccy>
                 <Tp>
@@ -20,7 +20,7 @@
                 </Tp>
             </Acct>
             <Ntry>
-                <Amt Ccy="EUR">1000.00</Amt>
+                <Amt Ccy="EUR">6103.33</Amt>
                 <CdtDbtInd>CRDT</CdtDbtInd>
                 <Sts>BOOK</Sts>
                 <BookgDt>
@@ -29,7 +29,7 @@
                 <ValDt>
                     <Dt>2024-01-25</Dt>
                 </ValDt>
-                <AcctSvcrRef>123456789</AcctSvcrRef>
+                <AcctSvcrRef>17702359</AcctSvcrRef>
                 <BkTxCd>
                     <Prtry>
                         <Cd>PMNT</Cd>
@@ -38,9 +38,9 @@
                 </BkTxCd>
                 <NtryDtls>
                     <Btch>
-                        <PmtInfId>Payment1</PmtInfId>
+                        <PmtInfId>Payment30</PmtInfId>
                         <NbOfTxs>1</NbOfTxs>
-                        <TtlAmt Ccy="EUR">1000.00</TtlAmt>
+                        <TtlAmt Ccy="EUR">6103.33</TtlAmt>
                     </Btch>
                 </NtryDtls>
             </Ntry>
